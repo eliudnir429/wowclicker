@@ -1,0 +1,31 @@
+.main{
+  float: left;
+  position: relative;
+  width: 40%;
+  height: 600px;
+  text-align: center;
+}
+
+.side{
+  float: left;
+  position: relative;
+  width: 60%;
+  height: 600px;
+  text-align: center;
+}
+
+.row-tree{
+  height: 100px;
+  width: 100%;
+  position: relative;
+  writing-mode: vertical-rl;
+  text-orientation: upright;
+  line-height: 80%;
+}
+
+.tree{
+  position: absolute;
+  left:50%;
+  bottom: 0%;
+}
+
