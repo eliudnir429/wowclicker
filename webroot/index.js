@@ -1,5 +1,4 @@
-import { WowClicker } from "./script/WowClicker.js";
+import { WowClicker } from "./js/module/WowClicker.js";
 
 const clicker = new WowClicker();
 clicker.action();
-

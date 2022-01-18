@@ -10,29 +10,35 @@
   <body>
     <div class="main">
       <div id="wow-field">
-        <div id="jmptxt" style="position:relative;margin-top:24px">
-          <span class="rainbow">wow! clicker 1.4.0</span>
+        <div id="jmptxt" style="position: relative; margin-top: 24px">
+          <span class="rainbow">wow! clicker 2.0.0</span>
         </div>
       </div>
       <h3><div id="status-total"></div></h3>
       <div id="status-wps"></div>
-      <form id="clicker-form">
-        <button id="add-total" type="submit">wow!</button><br />
-        <hr />
-        <button id="add-autoclicker" type="submit">autowow!</button>
-        <div id="own-autoclicker"></div>
-        <div id="cost-autoclicker"></div><br>
-        <button id="add-o" type="submit">o</button>
-        <div id="own-o"></div>
-        <div id="cost-o"></div><br>
-        <button id="add-tree" type="submit">草生える</button>
-        <div id="cost-tree"></div>
-        <div id="ascend-tree"></div>
-        <div id="mature-tree"></div><br>
-        <button id="add-nekochan" type="submit">nekochan</button>
-        <div id="own-nekochan"></div>
-        <div id="cost-nekochan"></div><br>
-
+      <form id="addWow"><button id="total" type="submit">wow!</button><br /></form>
+      <hr />
+      <form id="addItem">
+        <button id="autoclicker" type="submit">autowow!</button>
+        <div id="autoclicker-own"></div>
+        <div id="autoclicker-cost"></div>
+        <br />
+        <button id="o" type="submit">o</button>
+        <div id="o-own"></div>
+        <div id="o-cost"></div>
+        <br />
+        <button id="tree" type="submit">草生える</button>
+        <div id="tree-own"></div>
+        <div id="tree-cost"></div>
+        <br />
+        <button id="nekochan" type="submit">neko</button>
+        <div id="nekochan-own"></div>
+        <div id="nekochan-cost"></div>
+      </form>
+      <hr />
+      <form id="legacyLoad">
+        <p>ver 2.0.0未満のセーブデータを復元します</p>
+        <button id="legacyLoad" type="submit">Restore</button>
       </form>
     </div>
     <div class="side">
@@ -41,7 +47,6 @@
       </div>
     </div>
     <script type="module" src="index.js"></script>
-    <script type="text/javascript" src="script/rainbow.js"></script>
-    <script type="text/javascript" src="script/jmptxt1.js"></script>
+    <script type="text/javascript" src="./js/string.js"></script>
   </body>
 </html>

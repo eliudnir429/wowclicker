@@ -61,10 +61,18 @@
           g = 0;
           b = 255 - 255 * y;
         }
-        ch.item(i).style.color =
-          "#" + (0x1000000 | b | (g << 8) | (r << 16)).toString(16).substr(1);
+        ch.item(i).style.color = "#" + (0x1000000 | b | (g << 8) | (r << 16)).toString(16).substr(1);
       }
     }
     ++rainbowX;
   }
 })(); //即時関数終了
+
+(function () {
+  let v = 0;
+  setInterval(function () {
+    v += 0.4;
+    if (v > Math.PI) v = 0;
+    document.querySelector("#jmptxt").style.top = -24 * Math.sin(v) + "px";
+  }, 100);
+})();
