@@ -1,6 +1,6 @@
 export class Player {
   constructor(savedata = null) {
-    this.total = 9999;
+    this.total = 0;
     this.items = {
       autoclicker: 0,
       o: 0,
